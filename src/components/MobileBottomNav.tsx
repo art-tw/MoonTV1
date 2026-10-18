@@ -28,34 +28,47 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
     { icon: Search, label: '搜索', href: '/search' },
     {
       icon: Film,
-      label: '电影',
+      label: '電影',
       href: '/douban?type=movie',
     },
     {
       icon: Tv,
-      label: '剧集',
+      label: '劇集',
       href: '/douban?type=tv',
     },
     {
       icon: Clapperboard,
-      label: '短剧',
+      label: '短劇',
       href: '/douban?type=short',
     },
     {
       icon: Compass,
-      label: '纪录片',
+      label: '紀錄片',
       href: '/douban?type=doc',
     },
     {
       icon: Cat,
-      label: '动漫',
+      label: '動漫',
       href: '/douban?type=anime',
     },
     {
       icon: Clover,
-      label: '综艺',
+      label: '綜藝',
       href: '/douban?type=show',
     },
+    {
+      icon: Film,
+      label: '台灣電影',
+      href: '/douban?type=movie&tag=台湾',
+    },
+    { icon: Swords, label: '美劇', href: '/douban?type=tv&tag=美剧' },
+    {
+      icon: MessageCircleHeart,
+      label: '韓劇',
+      href: '/douban?type=tv&tag=韩剧',
+    },
+    { icon: MountainSnow, label: '日劇', href: '/douban?type=tv&tag=日剧' },
+    { icon: VenetianMask, label: '陸劇', href: '/douban?type=movie&tag=中国' },
   ]);
 
   // 检查是否启用简洁模式 - 使用状态管理
